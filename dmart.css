@@ -1,4 +1,13 @@
-
+@media print {
+    body *:not(#out-side):not(#out-side *) {
+        visibility: hidden;
+    }
+    #out-side {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
 
 .border-outside {
     height: 600px;
